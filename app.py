@@ -41,7 +41,7 @@ def ejercicio1():
             "totalDescuento": totalDescuento,
             "total": total
         }
-    return render_template("ejercicio11.html", resultado=resultado)
+    return render_template("ejercicio1.html", resultado=resultado)
 
 @app.route("/ejercicio2", methods=["GET", "POST"])
 def ejercicio2():
@@ -57,7 +57,7 @@ def ejercicio2():
                 mensaje = f"Bienvenido Usuario {usuario}"
         else:
             mensaje = "Credenciales incorrectas. Inténtalo nuevamente."
-    return render_template("ejercicio22.html", mensaje=mensaje)
+    return render_template("ejercicio2.html", mensaje=mensaje)
 
 
 if __name__ == "__main__":
