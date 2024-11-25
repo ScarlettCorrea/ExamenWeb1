@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    text-align: center;
+}
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+.exercise1 {
+    background-color: #800080; /* Morado */
+    color: white;
+}
+.exercise2 {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+.button:hover {
+    opacity: 0.8;
+}

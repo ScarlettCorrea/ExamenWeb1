@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Ejercicio 2{% endblock %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css' ) }}">
+</head>
+
+<div class="form-container">
+    <form method="POST" class="form">
+        <h1>Inicio de sesión</h1>
+        <div class="input-container">
+            <label for="usuario" class="form-label">Ingresa tu nombre</label>
+            <input type="text" id="usuario" name="usuario" class="form-control" required>
+        </div>
+        <div class="input-container">
+            <label for="contrasena" class="form-label">Ingresa tu contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+        </div>
+        <button type="submit">Ingresar</button>
+        
+    {% if mensaje %}
+    {% include "resultado2.html" %}
+    {% endif %}
+    </form>
+</div>
+{% endblock %}
